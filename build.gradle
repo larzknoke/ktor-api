@@ -1,9 +1,10 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version "$kotlin_version"
+    id 'org.jetbrains.kotlin.plugin.serialization' version "$kotlin_version"
 }
 
 
-group 'com.jetbrains.handson'
+group 'com.larsknoke'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -16,6 +17,12 @@ dependencies {
     implementation "io.ktor:ktor-html-builder:$ktor_version"
     implementation "io.ktor:ktor-freemarker:$ktor_version"
     implementation "ch.qos.logback:logback-classic:$logback_version"
+    implementation 'org.ktorm:ktorm-core:3.4.1'
+    implementation 'mysql:mysql-connector-java:8.0.25'
+    implementation "io.ktor:ktor-serialization:$ktor_version"
+    implementation group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
+    implementation "io.ktor:ktor-auth:$ktor_version"
+    implementation "io.ktor:ktor-auth-jwt:$ktor_version"
 }
 
 compileKotlin {

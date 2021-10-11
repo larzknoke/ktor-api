@@ -1,0 +1,18 @@
+GET http://0.0.0.0:8080/notes
+Accept: application/json
+
+###
+POST http://0.0.0.0:8080/notes
+Content-Type: application/json
+
+{
+  "note": "Hello this is new here!"
+}
+###
+
+
+### Authorization by token, part 2. Use token to authorize.
+GET http://0.0.0.0:8080/notes
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwL2hlbGxvIiwiaXNzIjoiaHR0cDovLzAuMC4wLjA6ODA4MC8iLCJ1c2VySWQiOjgsInVzZXJuYW1lIjoibGFycy5rbm9rZSJ9.sxCWvmfl2EJcelXR2kCrIev0RP8DkJdX3jGlJC0-lYc
+
+###

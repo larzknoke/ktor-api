@@ -1,4 +1,4 @@
-<#-- @ftlvariable name="entries" type="kotlin.collections.List<com.jetbrains.handson.website.BlogEntry>" -->
+<#-- @ftlvariable name="entries" type="kotlin.collections.List<com.larsknoke.BlogEntry>" -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
 </head>
 <body style="text-align: center; font-family: sans-serif">
 <img src="/static/ktor.png">
-<h1>Kotlin Ktor Journal </h1>
+<h1>Kotlin Ktor Journal!</h1>
 <p><i>Powered by Ktor, kotlinx.html & Freemarker!</i></p>
 <hr>
 <#list entries as item>
